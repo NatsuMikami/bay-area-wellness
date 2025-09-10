@@ -365,7 +365,7 @@ export default function WellnessSite() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground">{a.blurb}</p>
-                  <Button variant="link" className="mt-2 p-0">Read more <ChevronRight className="ml-1 h-4 w-4"/></Button>
+                  <Button variant="link" className="mt-2 p-0" asChild><a href={`/articles/${a.slug}`}>Read more <ChevronRight className="ml-1 h-4 w-4"/></a></Button>
                 </CardContent>
               </Card>
             ))}
